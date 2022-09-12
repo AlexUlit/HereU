@@ -13,5 +13,6 @@ UCLASS()
 class HEREU_API AHereUGameModeBase : public AGameModeBase
 {
 	GENERATED_BODY()
-	
+public:
+	AHereUGameModeBase(); //Constructor declaration
 };
