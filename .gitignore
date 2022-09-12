@@ -77,3 +77,6 @@ Plugins/*Developer/*RiderLink/*
 
 # Build link have to be generate in local project
 Build/*
+
+# Rider link have to be generate in local project
+Plugins/*BlueprintAssist/*NodeSizeCache/

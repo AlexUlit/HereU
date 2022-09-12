@@ -13,5 +13,9 @@ UCLASS()
 class HEREU_API AControllerProtagonist : public AHereUPlayerController_Base
 {
 	GENERATED_BODY()
-	
+
+public:
+	virtual void BeginPlay() override;
+	virtual void MoveForward(float AxisValue) override;
+	virtual void MoveRight(float AxisValue) override;
 };
