@@ -4,22 +4,21 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/PlayerController.h"
-#include "HereUPlayerController_Base.generated.h"
+#include "HereUPlayerController.generated.h"
 
 /**
  * 
  */
 UCLASS()
-class HEREU_API AHereUPlayerController_Base : public APlayerController
+class HEREU_API AHereUPlayerController : public APlayerController
 {
 	GENERATED_BODY()
 
 protected:
 	virtual void BeginPlay() override;
-	virtual void OnPossess(APawn* aPawn) override;
 	virtual void SetupInputComponent() override;
-	virtual void MoveForward(float AxisValue);
-	virtual void MoveRight(float AxisValue);
+	virtual void GoForward(float AxisValue);
+	virtual void GoRight(float AxisValue);
 };
 
 
