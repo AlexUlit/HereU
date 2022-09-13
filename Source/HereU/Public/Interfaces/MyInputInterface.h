@@ -20,8 +20,9 @@ class HEREU_API IMyInputInterface
 	GENERATED_BODY()
 
 public:
-	virtual void MoveForward(float AxisValue)
-	{
-		
-	}
+	virtual void InputMoveX(float AxisValue){}
+	virtual void InputMoveY(float AxisValue){}
+	virtual void InputMouseX(float AxisValue){}
+	virtual void InputMouseY(float AxisValue){}
+	virtual void InputSpacePress(){}
 };

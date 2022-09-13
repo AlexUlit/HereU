@@ -12,7 +12,10 @@ class HEREU_API AProtagonist : public AHereUCharacter_Base, public IMyInputInter
 	GENERATED_BODY()
 
 public:
-	virtual void MoveForward(float AxisValue) override;
-	
+	virtual void InputMoveX(float AxisValue) override;
+	virtual void InputMoveY(float AxisValue) override;
+	virtual void InputMouseX(float AxisValue) override;
+	virtual void InputMouseY(float AxisValue) override;
+	virtual void InputSpacePress() override;
 };
 
